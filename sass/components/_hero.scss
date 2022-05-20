@@ -1,0 +1,33 @@
+.hero {
+   &__link {
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 1.36;
+
+      letter-spacing: 0.2em;
+
+      color: $basic-title-color;
+
+      &:hover,
+      &:focus {
+         color: $accent-color;
+      }
+   }
+}
+
+.hero-content {
+   background-color: #303030;
+   &__top-text {
+      color: $hero-top-text;
+   }
+
+   &__title {
+      color: $second-title-color;
+   }
+
+   &__bottom-text {
+      // line-height: 1.67;
+
+      color: $second-hero-text-color;
+   }
+}

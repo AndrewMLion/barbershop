@@ -24,9 +24,21 @@ svg {
    height: 100%;
 }
 
-button {
+.button {
+   font-family: inherit;
+   font-weight: 600;
+   font-size: 12px;
+   line-height: 1.33;
+   letter-spacing: 0.09em;
+   text-transform: uppercase;
+
    border: 0;
    background-color: transparent;
+
+   &:hover,
+   &:focus {
+      color: $accent-color;
+   }
 }
 
 .list {
@@ -53,4 +65,26 @@ button {
    clip-path: insert(100%);
    clip: rect(0 0 0 0);
    overflow: hidden;
+}
+
+.top-text {
+   font-weight: 600;
+   font-size: 11px;
+   line-height: 1.36;
+   letter-spacing: 0.1em;
+   text-transform: uppercase;
+}
+
+.title {
+   font-family: 'Raleway';
+   font-weight: 700;
+   font-size: 42px;
+   line-height: 1.16;
+   letter-spacing: 0.05em;
+}
+
+.bottom-text {
+   font-size: 18px;
+   line-height: 1.67;
+   letter-spacing: 0.02em;
 }

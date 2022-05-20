@@ -1,0 +1,22 @@
+.price {
+   background-color: #868484;
+
+   &__text {
+      color: $price-text;
+   }
+
+   &__title {
+      color: $second-title-color;
+   }
+
+   &__item-text {
+      line-height: 1.67;
+      letter-spacing: 0.02em;
+
+      color: $price-text-color;
+   }
+
+   &__button {
+      color: $basic-btn-text-color;
+   }
+}

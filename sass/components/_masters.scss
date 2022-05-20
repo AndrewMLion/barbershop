@@ -1,0 +1,22 @@
+.masters {
+   &__top-text {
+      color: $basic-title-color;
+   }
+
+   &__title {
+      color: $basic-title-color;
+   }
+
+   &__item-title {
+      font-weight: 400;
+      text-align: center;
+
+      color: $basic-title-color;
+   }
+
+   &__item-text {
+      text-align: center;
+
+      color: $accent-color;
+   }
+}

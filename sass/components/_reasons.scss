@@ -1,0 +1,32 @@
+.reasons {
+   &__top-text {
+      color: $basic-title-color;
+   }
+
+   &__title {
+      color: $basic-title-color;
+   }
+
+   &__bottom-text {
+      color: $basic-text-color;
+   }
+
+   &__item-count {
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 1.35;
+      text-align: center;
+      letter-spacing: 0.05em;
+
+      color: $basic-title-color;
+   }
+
+   &__item-text {
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 1.36;
+      text-align: center;
+
+      color: $basic-title-color;
+   }
+}

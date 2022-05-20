@@ -1,0 +1,41 @@
+.about {
+   &__top-text {
+      // font-weight: 600;
+      // font-size: 11px;
+      // line-height: 1.36;
+      // letter-spacing: 0.1em;
+      // text-transform: uppercase;
+
+      color: $basic-title-color;
+   }
+
+   &__title {
+      // font-family: 'Raleway';
+      // font-weight: 700;
+      // font-size: 42px;
+      // line-height: 1.16;
+      // letter-spacing: 0.05em;
+
+      color: $basic-title-color;
+   }
+
+   &__bottom-text {
+      // font-size: 18px;
+      // line-height: 1.67;
+      // letter-spacing: 0.02em;
+
+      color: $basic-text-color;
+   }
+
+   &__text {
+      font-size: 14px;
+      line-height: 1.86;
+      letter-spacing: 0.02em;
+
+      color: $basic-text-color;
+   }
+
+   &_botton {
+      color: $second-btn-text-color;
+   }
+}
