@@ -1,12 +1,27 @@
 .price {
-   background-color: #868484;
+   padding-top: 130px;
+   padding-bottom: 130px;
 
-   &__text {
+   background-color: #303030;
+
+   &__top-text {
+      margin-bottom: 20px;
+
       color: $price-text;
    }
 
    &__title {
+      margin-bottom: 44px;
+
       color: $second-title-color;
+   }
+
+   &__item {
+      margin-bottom: 20px;
+   }
+
+   &__list {
+      padding: 30px 40px;
    }
 
    &__item-text {

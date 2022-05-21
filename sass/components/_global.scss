@@ -24,6 +24,10 @@ svg {
    height: 100%;
 }
 
+button {
+   cursor: pointer;
+}
+
 .button {
    font-family: inherit;
    font-weight: 600;
@@ -31,9 +35,16 @@ svg {
    line-height: 1.33;
    letter-spacing: 0.09em;
    text-transform: uppercase;
+   color: $basic-btn-text-color;
 
-   border: 0;
+   min-width: 160px;
+   height: 40px;
+
+   border: 1px solid $accent-color;
+   border-radius: 25px;
    background-color: transparent;
+
+   cursor: pointer;
 
    &:hover,
    &:focus {

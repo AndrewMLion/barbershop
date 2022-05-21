@@ -1,33 +1,41 @@
 .about {
+   padding-top: 139px;
+   padding-bottom: 125px;
+
+   .container {
+      display: flex;
+   }
+
+   &__list {
+      display: flex;
+      margin-right: 64px;
+   }
+
+   &__item + &__item {
+      margin-left: 30px;
+   }
+
    &__top-text {
-      // font-weight: 600;
-      // font-size: 11px;
-      // line-height: 1.36;
-      // letter-spacing: 0.1em;
-      // text-transform: uppercase;
+      margin-bottom: 20px;
 
       color: $basic-title-color;
    }
 
    &__title {
-      // font-family: 'Raleway';
-      // font-weight: 700;
-      // font-size: 42px;
-      // line-height: 1.16;
-      // letter-spacing: 0.05em;
+      margin-bottom: 20px;
 
       color: $basic-title-color;
    }
 
    &__bottom-text {
-      // font-size: 18px;
-      // line-height: 1.67;
-      // letter-spacing: 0.02em;
+      margin-bottom: 20px;
 
       color: $basic-text-color;
    }
 
    &__text {
+      margin-bottom: 40px;
+
       font-size: 14px;
       line-height: 1.86;
       letter-spacing: 0.02em;

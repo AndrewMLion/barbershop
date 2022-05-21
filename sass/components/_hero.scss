@@ -1,4 +1,12 @@
 .hero {
+   .container {
+      display: flex;
+   }
+
+   &__list {
+      width: 93px;
+   }
+
    &__link {
       font-weight: 600;
       font-size: 11px;
@@ -16,18 +24,22 @@
 }
 
 .hero-content {
+   flex-grow: 1;
+   padding: 272px 0 206px 96px;
+
    background-color: #303030;
    &__top-text {
+      margin-bottom: 20px;
       color: $hero-top-text;
    }
 
    &__title {
+      margin-bottom: 20px;
       color: $second-title-color;
    }
 
    &__bottom-text {
-      // line-height: 1.67;
-
+      max-width: 400px;
       color: $second-hero-text-color;
    }
 }

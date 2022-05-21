@@ -25,6 +25,10 @@ svg {
   height: 100%;
 }
 
+button {
+  cursor: pointer;
+}
+
 .button {
   font-family: inherit;
   font-weight: 600;
@@ -32,8 +36,13 @@ svg {
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  border: 0;
+  color: #ffffff;
+  min-width: 160px;
+  height: 40px;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .button:hover, .button:focus {
@@ -113,8 +122,33 @@ svg {
 }
 
 .header {
+  padding-top: 32px;
+  padding-bottom: 32px;
   background-color: #c2bcbc;
   color: #ffffff;
+}
+
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  margin-right: 70px;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__item + .header__item {
+  margin-left: 40px;
 }
 
 .header__link {
@@ -129,8 +163,28 @@ svg {
   color: #ff6c00;
 }
 
+.header__connect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+}
+
 .header__btn {
-  color: #ffffff;
+  margin-left: 40px;
+}
+
+.hero .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero__list {
+  width: 93px;
 }
 
 .hero__link {
@@ -146,34 +200,67 @@ svg {
 }
 
 .hero-content {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 272px 0 206px 96px;
   background-color: #303030;
 }
 
 .hero-content__top-text {
+  margin-bottom: 20px;
   color: rgba(157, 164, 189, 0.6);
 }
 
 .hero-content__title {
+  margin-bottom: 20px;
   color: #ffffff;
 }
 
 .hero-content__bottom-text {
+  max-width: 400px;
   color: #9da4bd;
 }
 
+.about {
+  padding-top: 139px;
+  padding-bottom: 125px;
+}
+
+.about .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 64px;
+}
+
+.about__item + .about__item {
+  margin-left: 30px;
+}
+
 .about__top-text {
+  margin-bottom: 20px;
   color: #303030;
 }
 
 .about__title {
+  margin-bottom: 20px;
   color: #303030;
 }
 
 .about__bottom-text {
+  margin-bottom: 20px;
   color: #555555;
 }
 
 .about__text {
+  margin-bottom: 40px;
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
@@ -185,15 +272,27 @@ svg {
 }
 
 .price {
-  background-color: #868484;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background-color: #303030;
 }
 
-.price__text {
+.price__top-text {
+  margin-bottom: 20px;
   color: rgba(157, 164, 189, 0.6);
 }
 
 .price__title {
+  margin-bottom: 44px;
   color: #ffffff;
+}
+
+.price__item {
+  margin-bottom: 20px;
+}
+
+.price__list {
+  padding: 30px 40px;
 }
 
 .price__item-text {
@@ -206,11 +305,18 @@ svg {
   color: #ffffff;
 }
 
+.reasons {
+  padding-top: 114px;
+  padding-bottom: 137px;
+}
+
 .reasons__top-text {
+  margin-bottom: 20px;
   color: #303030;
 }
 
 .reasons__title {
+  margin-bottom: 20px;
   color: #303030;
 }
 
@@ -218,7 +324,15 @@ svg {
   color: #555555;
 }
 
+.reasons__item {
+  width: 170px;
+  height: 130px;
+  background-color: #f7f7f7;
+}
+
 .reasons__item-count {
+  display: block;
+  margin-bottom: 6px;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.35;
@@ -235,15 +349,27 @@ svg {
   color: #303030;
 }
 
+.masters {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
 .masters__top-text {
+  margin-bottom: 20px;
   color: #303030;
 }
 
 .masters__title {
+  margin-bottom: 44px;
   color: #303030;
 }
 
+.masters__title-foto {
+  margin-top: 30px;
+}
+
 .masters__item-title {
+  margin-bottom: 8px;
   font-weight: 400;
   text-align: center;
   color: #303030;

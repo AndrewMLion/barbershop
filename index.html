@@ -15,7 +15,9 @@
    <body>
       <header class="header">
          <div class="container">
-            <a href="" class="link"><img src="./image/logo.svg" alt="" /></a>
+            <a href="" class="header__logo link"
+               ><img src="./image/logo.svg" alt=""
+            /></a>
 
             <nav class="site-nav">
                <ul class="list header__list">
@@ -34,12 +36,14 @@
                </ul>
             </nav>
 
-            <a class="link header__link" href="tel:+380441111111"
-               >+38 044 111 11 11</a
-            >
-            <button class="header__btn button" type="button">
-               Онлайн-запись
-            </button>
+            <div class="header__connect">
+               <a class="link header__link" href="tel:+380441111111"
+                  >+38 044 111 11 11</a
+               >
+               <button class="header__btn button" type="button">
+                  Онлайн-запись
+               </button>
+            </div>
          </div>
       </header>
 
@@ -95,24 +99,27 @@
                      />
                   </li>
                </ul>
-               <p class="about__top-text top-text">О нас</p>
-               <h2 class="about__title title">
-                  Лучший Барбершоп твоего города
-               </h2>
-               <p class="about__bottom-text bottom-text">
-                  Если ты хочешь добавить в свой образ больше уверенности – тебе
-                  точно к нам.
-               </p>
-               <p class="about__text">
-                  Мы команда, которая никогда не останавливается на достигнутом
-                  и жаждет перемен. И когда ты попадешь в руки нашего мастера,
-                  то уже никогда не сможешь быть прежним. Мы команда, которая
-                  всегда с клиентами "на одной волне". Поэтому, мы всегда готовы
-                  усовершенствовать каждого, кто к нам приходит!
-               </p>
-               <button class="about__botton button" type="button">
-                  Онлайн-запись
-               </button>
+               <div class="about__content">
+                  <p class="about__top-text top-text">О нас</p>
+                  <h2 class="about__title title">
+                     Лучший Барбершоп твоего города
+                  </h2>
+                  <p class="about__bottom-text bottom-text">
+                     Если ты хочешь добавить в свой образ больше уверенности –
+                     тебе точно к нам.
+                  </p>
+                  <p class="about__text">
+                     Мы команда, которая никогда не останавливается на
+                     достигнутом и жаждет перемен. И когда ты попадешь в руки
+                     нашего мастера, то уже никогда не сможешь быть прежним. Мы
+                     команда, которая всегда с клиентами "на одной волне".
+                     Поэтому, мы всегда готовы усовершенствовать каждого, кто к
+                     нам приходит!
+                  </p>
+                  <button class="about__botton button" type="button">
+                     Онлайн-запись
+                  </button>
+               </div>
             </div>
          </section>
 
@@ -208,18 +215,24 @@
                <ul class="masters__list list">
                   <li class="masters__item item">
                      <img src="./image/master-1-370.jpg" alt="" />
-                     <h3 class="masters__item-title">John Smith</h3>
-                     <p class="masters__item-text">Extreme Barber</p>
+                     <div class="masters__title-foto">
+                        <h3 class="masters__item-title">John Smith</h3>
+                        <p class="masters__item-text">Extreme Barber</p>
+                     </div>
                   </li>
                   <li class="masters__item item">
                      <img src="./image/master-2-370.jpg" alt="" />
-                     <h3 class="masters__item-title">Michele Doe</h3>
-                     <p class="masters__item-text">Extreme Barber</p>
+                     <div class="masters__title-foto">
+                        <h3 class="masters__item-title">Michele Doe</h3>
+                        <p class="masters__item-text">Extreme Barber</p>
+                     </div>
                   </li>
                   <li class="masters__item item">
                      <img src="./image/master-3-370.jpg" alt="" />
-                     <h3 class="masters__item-title">Alan Black</h3>
-                     <p class="masters__item-text">Extreme Barber</p>
+                     <div class="masters__title-foto">
+                        <h3 class="masters__item-title">Alan Black</h3>
+                        <p class="masters__item-text">Extreme Barber</p>
+                     </div>
                   </li>
                </ul>
             </div>
@@ -259,6 +272,7 @@
                   <ul class="contacts__list list">
                      <li class="contacts__item item">
                         <a
+                           class="contacts__link link"
                            href="https://goo.gl/maps/pknqgttQEgvyv9jF6"
                            target="_blank"
                            rel="noopener noreferrer nofollow"
@@ -266,32 +280,44 @@
                         >
                      </li>
                      <li class="contacts__item item">
-                        <a href="tel:+380441111111">+38 044 111 11 11</a>
+                        <a class="contacts__link link" href="tel:+380441111111"
+                           >+38 044 111 11 11</a
+                        >
                      </li>
                      <li class="contacts__item item">
-                        <a href="mailto:barbershop@email.com"
+                        <a
+                           class="contacts__link link"
+                           href="mailto:barbershop@email.com"
                            >barbershop@email.com</a
                         >
                      </li>
                   </ul>
                </address>
-               <p>время работы</p>
-               <p>Ежедневно с 9:00 до 22:00</p>
+               <p class="text-time">время работы</p>
+               <p class="text-time">Ежедневно с 9:00 до 22:00</p>
             </div>
          </section>
       </main>
 
-      <footer class="footer">
+      <footer class="footer__">
          <div class="container">
             <p>&#169; Copyright 2020</p>
-            <ul class="list">
-               <li class="item">
-                  <a href="" target="_blank" rel="noopener noreferrer nofollow"
+            <ul class="footer__list list">
+               <li class="footer__item item">
+                  <a
+                     class="footer__link link"
+                     href=""
+                     target="_blank"
+                     rel="noopener noreferrer nofollow"
                      >Instagram</a
                   >
                </li>
-               <li class="item">
-                  <a href="" target="_blank" rel="noopener noreferrer nofollow"
+               <li class="footer__item item">
+                  <a
+                     class="footer__link link"
+                     href=""
+                     target="_blank"
+                     rel="noopener noreferrer nofollow"
                      >Youtube</a
                   >
                </li>

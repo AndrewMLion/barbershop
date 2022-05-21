@@ -1,6 +1,26 @@
 .header {
+   padding-top: 32px;
+   padding-bottom: 32px;
+
    background-color: rgb(194, 188, 188);
    color: $header-text-color;
+
+   .container {
+      display: flex;
+      align-items: center;
+   }
+
+   &__logo {
+      margin-right: 70px;
+   }
+
+   &__list {
+      display: flex;
+   }
+
+   &__item + &__item {
+      margin-left: 40px;
+   }
 
    &__link {
       font-weight: 600;
@@ -16,7 +36,14 @@
       }
    }
 
+   &__connect {
+      display: flex;
+      align-items: center;
+
+      margin-left: auto;
+   }
+
    &__btn {
-      color: $header-text-color;
+      margin-left: 40px;
    }
 }

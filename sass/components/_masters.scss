@@ -1,13 +1,26 @@
 .masters {
+   padding-top: 130px;
+   padding-bottom: 130px;
+
    &__top-text {
+      margin-bottom: 20px;
+
       color: $basic-title-color;
    }
 
    &__title {
+      margin-bottom: 44px;
+
       color: $basic-title-color;
    }
 
+   &__title-foto {
+      margin-top: 30px;
+   }
+
    &__item-title {
+      margin-bottom: 8px;
+
       font-weight: 400;
       text-align: center;
 
