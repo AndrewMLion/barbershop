@@ -21,11 +21,7 @@ img,
 svg {
    display: block;
    max-width: 100%;
-   height: 100%;
-}
-
-button {
-   cursor: pointer;
+   // height: 100%;
 }
 
 .button {
@@ -79,11 +75,24 @@ button {
 }
 
 .top-text {
+   display: flex;
+   align-items: center;
+
    font-weight: 600;
    font-size: 11px;
    line-height: 1.36;
    letter-spacing: 0.1em;
    text-transform: uppercase;
+}
+
+.top-text::before {
+   content: ' ';
+   width: 63px;
+   height: 1px;
+   background-color: currentColor;
+   display: block;
+
+   margin-right: 21px;
 }
 
 .title {

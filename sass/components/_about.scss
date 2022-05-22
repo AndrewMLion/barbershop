@@ -8,6 +8,8 @@
 
    &__list {
       display: flex;
+      flex-shrink: 0;
+
       margin-right: 64px;
    }
 
@@ -43,7 +45,7 @@
       color: $basic-text-color;
    }
 
-   &_botton {
+   &__botton {
       color: $second-btn-text-color;
    }
 }

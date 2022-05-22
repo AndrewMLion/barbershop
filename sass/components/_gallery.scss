@@ -1,5 +1,20 @@
 .gallery {
+   padding-top: 130px;
+   padding-bottom: 130px;
+
+   &__list {
+      display: flex;
+      margin-left: -30px;
+   }
+
+   &__item {
+      flex-basis: calc((100% - 120px) / 4);
+      margin-left: 30px;
+   }
+
    &__top-text {
+      margin-bottom: 44px;
+
       color: $basic-title-color;
    }
 }

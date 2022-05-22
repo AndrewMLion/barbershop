@@ -1,0 +1,42 @@
+.social {
+   display: block;
+
+   margin-top: 30px;
+
+   &__list {
+      display: flex;
+      justify-content: center;
+   }
+
+   &__item + &__item {
+      margin-left: 10px;
+   }
+
+   // &__item {
+   //    // transition: background-color getTiming('timing'), fill getTiming('timing');
+   // }
+
+   &__item-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 44px;
+      height: 44px;
+
+      background-color: $basic-bg-color;
+      fill: $basic-title-color;
+
+      border-radius: 50%;
+
+      cursor: pointer;
+   }
+}
+
+.icon {
+   fill: $basic-title-color;
+   &:hover,
+   &:focus {
+      fill: $accent-color;
+   }
+}
