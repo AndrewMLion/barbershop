@@ -40,7 +40,7 @@
                <a class="link header__link" href="tel:+380441111111"
                   >+38 044 111 11 11</a
                >
-               <button class="header__btn button" type="button">
+               <button class="header__btn button" type="button" data-modal-open>
                   Онлайн-запись
                </button>
             </div>
@@ -118,7 +118,11 @@
                      Поэтому, мы всегда готовы усовершенствовать каждого, кто к
                      нам приходит!
                   </p>
-                  <button class="about__botton button" type="button">
+                  <button
+                     class="about__button button"
+                     type="button"
+                     data-modal-open-about
+                  >
                      Онлайн-запись
                   </button>
                </div>
@@ -171,7 +175,11 @@
                      </li>
                   </ul>
                </div>
-               <button class="price__button button" type="button">
+               <button
+                  class="price__button button"
+                  type="button"
+                  data-modal-open
+               >
                   Онлайн-запись
                </button>
             </div>
@@ -502,5 +510,17 @@
             </ul>
          </div>
       </footer>
+
+      <div class="backdrop is-hidden" data-modal>
+         <div class="modal">
+            <button type="reset" class="modal__close" data-modal-close>
+               <svg class="modal__close-icon">
+                  <use href="./image/icon.svg#close"></use>
+               </svg>
+            </button>
+         </div>
+      </div>
+
+      <script src="./js/modal.js"></script>
    </body>
 </html>

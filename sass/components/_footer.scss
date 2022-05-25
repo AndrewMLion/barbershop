@@ -1,0 +1,28 @@
+.footer {
+   .container {
+      display: flex;
+      padding: 55px;
+   }
+   &__list {
+      display: flex;
+      margin-left: auto;
+
+      align-items: center;
+
+      &::before {
+         content: ' ';
+         width: 63px;
+         height: 1px;
+         background-color: currentColor;
+         display: block;
+
+         margin-right: 21px;
+      }
+   }
+
+   &__item {
+      &:not(:last-child) {
+         margin-right: 40px;
+      }
+   }
+}

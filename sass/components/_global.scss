@@ -42,7 +42,7 @@ svg {
 
    cursor: pointer;
 
-   transition: color $time linear;
+   transition: color $time linear, background-color $time linear;
 
    &:hover,
    &:focus {
@@ -62,6 +62,10 @@ svg {
    color: inherit;
 
    // transition: color getTiming('timing');
+
+   &:hover {
+      color: $accent-color;
+   }
 }
 
 .visually-hidden {

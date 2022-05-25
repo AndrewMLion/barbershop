@@ -7,12 +7,32 @@
       display: flex;
       align-items: flex-end;
       width: 93px;
+
+      padding-left: 24px;
+      padding-bottom: 40px;
    }
 
    &__list {
       display: flex;
+
+      align-items: center;
+
       transform-origin: top left;
       transform: rotate(-90deg) translate(-19px);
+
+      &::before {
+         content: ' ';
+         width: 60px;
+         height: 1px;
+
+         background-color: $basic-title-color;
+
+         margin-right: 40px;
+      }
+   }
+
+   &__item + &__item {
+      margin-left: 40px;
    }
 
    &__link {
@@ -25,11 +45,6 @@
       color: $basic-title-color;
 
       transition: color $time linear;
-
-      &:hover,
-      &:focus {
-         color: $accent-color;
-      }
    }
 }
 

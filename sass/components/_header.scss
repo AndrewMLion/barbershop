@@ -33,11 +33,6 @@
       color: $header-text-color;
 
       transition: color $time linear;
-
-      &:hover,
-      &:focus {
-         color: $accent-color;
-      }
    }
 
    &__connect {
