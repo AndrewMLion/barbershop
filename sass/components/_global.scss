@@ -42,9 +42,12 @@ svg {
 
    cursor: pointer;
 
+   transition: color $time linear;
+
    &:hover,
    &:focus {
-      color: $accent-color;
+      background-color: $accent-color;
+      color: $basic-btn-text-color;
    }
 }
 

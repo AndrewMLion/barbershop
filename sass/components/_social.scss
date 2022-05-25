@@ -30,13 +30,17 @@
       border-radius: 50%;
 
       cursor: pointer;
-   }
-}
 
-.icon {
-   fill: $basic-title-color;
-   &:hover,
-   &:focus {
-      fill: $accent-color;
+      transition: filter $time linear;
+
+      &:hover,
+      &:focus {
+         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      }
+
+      &:hover .icon {
+         transition: fill $time linear;
+         fill: $accent-color;
+      }
    }
 }

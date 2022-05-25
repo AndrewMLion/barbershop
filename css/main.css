@@ -38,10 +38,13 @@ svg {
   border-radius: 25px;
   background-color: transparent;
   cursor: pointer;
+  -webkit-transition: color 250ms linear;
+  transition: color 250ms linear;
 }
 
 .button:hover, .button:focus {
-  color: #ff6c00;
+  background-color: #ff6c00;
+  color: #ffffff;
 }
 
 .list {
@@ -132,9 +135,10 @@ svg {
 }
 
 .header {
+  position: absolute;
+  width: 100%;
   padding-top: 32px;
   padding-bottom: 32px;
-  background-color: #c2bcbc;
   color: #ffffff;
 }
 
@@ -167,6 +171,8 @@ svg {
   line-height: 1.33;
   letter-spacing: 0.1em;
   color: #ffffff;
+  -webkit-transition: color 250ms linear;
+  transition: color 250ms linear;
 }
 
 .header__link:hover, .header__link:focus {
@@ -193,8 +199,24 @@ svg {
   display: flex;
 }
 
-.hero__list {
+.hero__soc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   width: 93px;
+}
+
+.hero__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: rotate(-90deg) translate(-19px);
+          transform: rotate(-90deg) translate(-19px);
 }
 
 .hero__link {
@@ -203,6 +225,8 @@ svg {
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: #303030;
+  -webkit-transition: color 250ms linear;
+  transition: color 250ms linear;
 }
 
 .hero__link:hover, .hero__link:focus {
@@ -526,13 +550,20 @@ svg {
   fill: #303030;
   border-radius: 50%;
   cursor: pointer;
+  -webkit-transition: -webkit-filter 250ms linear;
+  transition: -webkit-filter 250ms linear;
+  transition: filter 250ms linear;
+  transition: filter 250ms linear, -webkit-filter 250ms linear;
 }
 
-.icon {
-  fill: #303030;
+.social__item-link:hover, .social__item-link:focus {
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.icon:hover, .icon:focus {
+.social__item-link:hover .icon {
+  -webkit-transition: fill 250ms linear;
+  transition: fill 250ms linear;
   fill: #ff6c00;
 }
 
@@ -550,6 +581,7 @@ svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 100px;
 }
 
 .online {
@@ -564,5 +596,37 @@ svg {
   padding-top: 130px;
   padding-bottom: 130px;
   width: calc(50% - 15px);
+}
+
+.contacts__title {
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.contacts__list {
+  max-width: 270px;
+  margin-bottom: 70px;
+}
+
+.contacts__item {
+  color: #9da4bd;
+  font-style: normal;
+}
+
+.contacts__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.text-work {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.text-work.top-text {
+  color: #9da4bd;
+}
+
+.text-time {
+  color: #9da4bd;
 }
 /*# sourceMappingURL=main.css.map */

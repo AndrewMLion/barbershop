@@ -1,8 +1,10 @@
 .header {
+   position: absolute;
+   width: 100%;
+
    padding-top: 32px;
    padding-bottom: 32px;
 
-   background-color: rgb(194, 188, 188);
    color: $header-text-color;
 
    .container {
@@ -29,6 +31,8 @@
       letter-spacing: 0.1em;
 
       color: $header-text-color;
+
+      transition: color $time linear;
 
       &:hover,
       &:focus {

@@ -1,6 +1,7 @@
 .contact-wrap {
    .container {
       display: flex;
+      margin-left: 100px;
    }
 
    margin: 0 auto;
@@ -26,4 +27,37 @@
    padding-bottom: 130px;
 
    width: calc(50% - 15px);
+
+   &__title {
+      color: $second-title-color;
+
+      margin-bottom: 40px;
+   }
+
+   &__list {
+      max-width: 270px;
+      margin-bottom: 70px;
+   }
+
+   &__item {
+      color: $address-color;
+      font-style: normal;
+   }
+
+   &__item:not(:last-child) {
+      margin-bottom: 20px;
+   }
+}
+
+.text-work {
+   margin-bottom: 20px;
+   color: $second-title-color;
+
+   &.top-text {
+      color: $address-color;
+   }
+}
+
+.text-time {
+   color: $address-color;
 }
