@@ -4,26 +4,26 @@
 @import './components/global';
 @import './components/container';
 // стили header
-@import './components/header';
+@import './layer/header';
 // стили hero
-@import './components/hero';
+@import './layer/hero';
 // стили about
-@import './components/about';
+@import './layer/about';
 // стили price
-@import './components/price';
+@import './layer/price';
 // стили reasons
-@import './components/reasons';
+@import './layer/reasons';
 // стили masters
-@import './components/masters';
+@import './layer/masters';
 // стили gallery
-@import './components/gallery';
+@import './layer/gallery';
 // стили иконок соцсетей
 @import './components/social';
 // стили контактов
-@import './components/contact-wrap';
+@import './layer/contact-wrap';
 // стили backdrop
 @import './components/backdrop';
 // стили модального окна
 @import './components/modal';
 // стили footer
-@import './components/footer';
+@import './layer/footer';

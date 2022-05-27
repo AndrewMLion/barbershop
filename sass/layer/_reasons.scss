@@ -1,6 +1,13 @@
 .reasons {
+   .container {
+      display: flex;
+   }
    padding-top: 114px;
    padding-bottom: 137px;
+
+   &__list {
+      display: flex;
+   }
 
    &__top-text {
       margin-bottom: 20px;

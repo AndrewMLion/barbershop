@@ -423,6 +423,18 @@ svg {
   padding-bottom: 137px;
 }
 
+.reasons .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reasons__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .reasons__top-text {
   margin-bottom: 20px;
   color: #303030;
@@ -629,6 +641,12 @@ svg {
 
 .contacts__item:not(:last-child) {
   margin-bottom: 20px;
+}
+
+.contacts__link .addr {
+  margin-right: 16px;
+  background-color: transparent;
+  fill: #9da4bd;
 }
 
 .text-work {
